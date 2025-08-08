@@ -72,7 +72,7 @@ cd scan-data-ktp
 ```
 ### Instalasi Dependensi
 ```bash
-pip install tkinter requests reportlab
+pip install requests reportlab
 ```
 ### Menjalankan Aplikasi
 
