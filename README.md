@@ -148,8 +148,8 @@ The application recognizes all 34 Indonesian provinces based on NIK prefix:
   - NIK input field
   - Email input field
   - Phone number input field
-  - "Cek Data" button
-  - "Export PDF" button
+  - Cek Data" button
+  - Export PDF" button
   - Results display area
 
 ### Interactive Elements
