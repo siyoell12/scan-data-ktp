@@ -1,104 +1,124 @@
-# KTP Checker - Indonesian ID Card Validator
+Oke, saya buatkan versi Markdown final yang **siap tempel ke GitHub** lengkap dengan badge profesional, sehingga tampilannya seperti proyek open source populer.
 
-A Python-based desktop application for validating and checking Indonesian ID Cards (KTP) with comprehensive data analysis and reporting capabilities.
+---
 
-## 🎯 Overview
+````markdown
+# 🆔 KTP Checker - Validator Kartu Tanda Penduduk Indonesia
 
-**KTP Checker** is a GUI application built with Tkinter that provides detailed analysis of Indonesian ID Cards (KTP) by extracting and validating information from the 16-digit NIK (Nomor Induk Kependudukan). The application offers both individual checking and batch processing capabilities with PDF export functionality.
+[![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://www.python.org/)  
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
+[![GUI](https://img.shields.io/badge/GUI-Tkinter-orange.svg)](#)  
+[![PDF](https://img.shields.io/badge/Report-PDF-red.svg)](#)  
 
-## ✨ Features
+Aplikasi desktop berbasis Python untuk memvalidasi dan memeriksa KTP (Kartu Tanda Penduduk) Indonesia dengan analisis data lengkap dan kemampuan pembuatan laporan PDF.
 
-- **🔍 NIK Analysis**: Parse and extract detailed information from 16-digit NIK
-- **📍 Province Detection**: Automatically identify province based on NIK prefix
-- **👤 Personal Data**: Extract birth date, gender, and age from NIK
-- **🌐 Online Validation**: Check registration status across multiple platforms
-- **📊 Comprehensive Reports**: Generate detailed PDF reports with all findings
-- **🖥️ User-Friendly GUI**: Easy-to-use desktop interface with Tkinter
-- **📁 File Export**: Save results as PDF reports
+---
 
-## 🛠️ Technical Details
+## 🎯 Gambaran Umum
 
-### Core Components
+**KTP Checker** adalah aplikasi GUI berbasis Tkinter yang memberikan analisis detail dari KTP dengan mengekstrak serta memvalidasi informasi dari NIK (Nomor Induk Kependudukan) 16 digit.  
+Mendukung pengecekan individu maupun batch, serta ekspor hasil ke file PDF.
 
-- **Language**: Python 3.7+
-- **GUI Framework**: Tkinter
-- **PDF Generation**: ReportLab
-- **HTTP Requests**: Requests library
-- **Date Processing**: datetime module
+---
 
-### Key Functions
+## ✨ Fitur
+
+- 🔍 **Analisis NIK** – Mengurai dan mengekstrak informasi detail dari NIK 16 digit
+- 📍 **Deteksi Provinsi** – Mengidentifikasi provinsi otomatis berdasarkan prefix NIK
+- 👤 **Data Pribadi** – Mengekstrak tanggal lahir, jenis kelamin, dan umur
+- 🌐 **Validasi Online** – Mengecek status pendaftaran di berbagai platform
+- 📊 **Laporan Lengkap** – Membuat laporan PDF detail hasil pengecekan
+- 🖥️ **Antarmuka GUI** – Tampilan desktop sederhana dengan Tkinter
+- 📁 **Ekspor File** – Simpan hasil pengecekan dalam format PDF
+
+---
+
+## 🛠️ Detail Teknis
+
+**Bahasa**: Python 3.7+  
+**Framework GUI**: Tkinter  
+**Pembuatan PDF**: ReportLab  
+**HTTP Request**: Requests  
+**Pengolahan Tanggal**: datetime  
+
+### Fungsi Utama
 
 #### `parse_nik(nik)`
-- **Purpose**: Extract detailed information from NIK
-- **Returns**: Dictionary with province, birth date, gender, and age
-- **Usage**: `parse_nik("1234567890123456")`
+- Mengambil informasi detail dari NIK  
+- Hasil: provinsi, tanggal lahir, jenis kelamin, umur  
+- Contoh:
+```python
+parse_nik("1234567890123456")
+````
 
 #### `get_full_data_check(nik, email, phone)`
-- **Purpose**: Comprehensive data validation across multiple platforms
-- **Platforms Checked**:
-  - BPJS Ketenagakerjaan
-  - Dukcapil (Civil Registry)
-  - Tax Office
-  - BPJS Kesehatan
-  - Social Media platforms
-  - E-commerce platforms
-- **Returns**: Complete validation report with registration status
+
+* Validasi data secara menyeluruh di berbagai platform:
+
+  * BPJS Ketenagakerjaan
+  * Dukcapil
+  * Direktorat Pajak
+  * BPJS Kesehatan
+  * Media Sosial
+  * E-commerce
+* Mengembalikan laporan lengkap status pendaftaran
 
 #### `export_to_pdf(data, filename)`
-- **Purpose**: Generate professional PDF reports
-- **Features**: Structured layout with all validation results
-- **Output**: Professional PDF document ready for sharing
 
-## 🚀 Installation & Setup
+* Membuat laporan PDF profesional dengan semua hasil validasi
 
-### Prerequisites
-- Python 3.7 or higher
-- pip (Python package manager)
+---
 
-### Install Dependencies
+## 🚀 Instalasi & Penggunaan
+
+### Persyaratan
+
+* Python 3.7 atau lebih baru
+* pip
+
+### Instalasi Dependensi
+
 ```bash
 pip install tkinter requests reportlab
 ```
 
-### Run the Application
+### Menjalankan Aplikasi
+
 ```bash
 python dea.py
 ```
 
-## 📋 Usage Guide
+---
 
-### 1. Launch the Application
-```bash
-python dea.py
-```
+## 📋 Panduan Penggunaan
 
-### 2. Using the GUI
-1. **Enter NIK**: Input the 16-digit NIK number
-2. **Provide Contact Info**: Enter email and phone number for validation
-3. **Click "Cek Data"**: Process the KTP information
-4. **Review Results**: View detailed analysis in the text area
-5. **Export PDF**: Save results as PDF report
+1. **Masukkan NIK** – Isi NIK 16 digit
+2. **Masukkan Kontak** – Email & nomor HP untuk validasi
+3. **Klik "Cek Data"** – Proses informasi KTP
+4. **Lihat Hasil** – Analisis ditampilkan di area teks
+5. **Ekspor PDF** – Simpan hasil pengecekan
 
-### 3. Sample Usage
+### Contoh Kode
+
 ```python
-# Import the module
 from dea import get_full_data_check, parse_nik
 
-# Parse NIK information
 nik_info = parse_nik("1234567890123456")
-print(f"Province: {nik_info['province']}")
-print(f"Birth Date: {nik_info['birth_date']}")
-print(f"Gender: {nik_info['gender']}")
-print(f"Age: {nik_info['age']}")
+print(f"Provinsi: {nik_info['province']}")
+print(f"Tanggal Lahir: {nik_info['birth_date']}")
+print(f"Jenis Kelamin: {nik_info['gender']}")
+print(f"Umur: {nik_info['age']}")
 
-# Get comprehensive data check
 full_report = get_full_data_check("1234567890123456", "user@example.com", "081234567890")
 print(json.dumps(full_report, indent=2))
 ```
 
-## 📊 Output Format
+---
 
-### NIK Information Structure
+## 📊 Format Output
+
+### Informasi NIK
+
 ```json
 {
   "province": "DKI Jakarta",
@@ -108,7 +128,8 @@ print(json.dumps(full_report, indent=2))
 }
 ```
 
-### Full Validation Report
+### Laporan Validasi Lengkap
+
 ```json
 {
   "nik_info": {...},
@@ -122,112 +143,121 @@ print(json.dumps(full_report, indent=2))
 }
 ```
 
-## 🔍 NIK Structure Analysis
+---
 
-### Province Codes
-The application recognizes all 34 Indonesian provinces based on NIK prefix:
-- **11**: Aceh
-- **31**: DKI Jakarta
-- **32**: Jawa Barat
-- **33**: Jawa Tengah
-- **34**: DIY Yogyakarta
-- **35**: Jawa Timur
-- And 28 other provinces...
+## 🔍 Analisis Struktur NIK
 
-### Birth Date Extraction
-- **Format**: DDMMYY from positions 7-12
-- **Gender Indicator**: Day > 40 indicates female (day - 40)
-- **Century**: YY < 30 = 2000s, YY ≥ 30 = 1900s
+* **Kode Provinsi**: Mengenali semua 34 provinsi berdasarkan prefix NIK
 
-## 🎨 GUI Features
+  * 11: Aceh
+  * 31: DKI Jakarta
+  * 32: Jawa Barat
+  * 33: Jawa Tengah
+  * 34: DIY Yogyakarta
+  * 35: Jawa Timur
+  * ...dan lainnya
 
-### Main Window
-- **Title**: "DEA SAPUTRA CHECKER KTP"
-- **Size**: 500x600 pixels
-- **Components**:
-  - NIK input field
-  - Email input field
-  - Phone number input field
-  - Cek Data" button
-  - Export PDF" button
-  - Results display area
+* **Ekstraksi Tanggal Lahir**:
 
-### Interactive Elements
-- **Real-time validation** of input formats
-- **Progress indicators** during processing
-- **Error messages** for invalid inputs
-- **Success confirmations** for operations
+  * Format DDMMYY (digit ke-7–12)
+  * Hari > 40 → perempuan (hari - 40)
+  * Tahun < 30 → 2000-an, ≥ 30 → 1900-an
 
-## 📄 PDF Report Features
+---
 
-### Report Structure
-1. **Header**: "Laporan Pengecekan KTP"
-2. **NIK Information**: Detailed breakdown of NIK data
-3. **Registration Status**: Across all checked platforms
-4. **Dark Web Status**: Data breach monitoring
-5. **Timestamp**: When the check was performed
+## 🎨 Fitur GUI
 
-### Sample Report Content
+* **Judul**: "DEA SAPUTRA CHECKER KTP"
+* **Ukuran**: 500x600 px
+* **Komponen**:
+
+  * Input NIK
+  * Input Email
+  * Input Nomor HP
+  * Tombol Cek Data
+  * Tombol Ekspor PDF
+  * Area Hasil
+
+---
+
+## 📄 Fitur Laporan PDF
+
+**Struktur Laporan**:
+
+1. Header: *Laporan Pengecekan KTP*
+2. Informasi NIK
+3. Status Pendaftaran di berbagai platform
+4. Status di Dark Web
+5. Timestamp pengecekan
+
+**Contoh**:
+
 ```
 Laporan Pengecekan KTP
 ====================
 
 === Informasi NIK ===
-Province: DKI Jakarta
-Birth Date: 15-08-1990
-Gender: Laki-laki
-Age: 33
+Provinsi: DKI Jakarta
+Tanggal Lahir: 15-08-1990
+Jenis Kelamin: Laki-laki
+Umur: 33
 
-=== NIK Registration Status ===
+=== Status Pendaftaran NIK ===
 BPJS Ketenagakerjaan: Terdaftar
 Dukcapil: Terdaftar
-Tax Office: Tidak Terdaftar
+Direktorat Pajak: Tidak Terdaftar
 ...
 ```
 
-## 🛡️ Privacy & Security
+---
 
-- **Local Processing**: All data processing happens locally on your machine
-- **No Data Storage**: No personal information is stored or transmitted
-- **HTTPS**: Secure connections for online validation
-- **Input Validation**: Sanitization of all user inputs
+## 🛡️ Privasi & Keamanan
 
-## 🐛 Troubleshooting
+* Pemrosesan lokal di komputer pengguna
+* Tidak ada data yang disimpan/ditransmisikan
+* Koneksi HTTPS untuk validasi online
+* Sanitasi input sebelum diproses
 
-### Common Issues
+---
 
-1. **"Module not found" error**
+## 🐛 Pemecahan Masalah
+
+1. **Module not found**
+
    ```bash
    pip install tkinter requests reportlab
    ```
+2. **GUI tidak terbuka** – pastikan Python 3.7+ & Tkinter terinstal
+3. **Ekspor PDF gagal** – pastikan izin tulis & ReportLab terinstal
 
-2. **GUI not opening**
-   - Ensure you're running Python 3.7+
-   - Check if tkinter is available
+---
 
-3. **PDF export fails**
-   - Ensure write permissions in current directory
-   - Check if ReportLab is installed
+## 🌐 Komunitas & Media Sosial
 
-## 🌐 Komunitas & Sosial Media
-
-Ingin berdiskusi, bertanya, atau berbagi ide? Bergabunglah dengan komunitas kami!
-
-💬 Telegram Group: [t.me/airdropindependen](https://t.me/independendropers)
-
+💬 Telegram: [t.me/airdropindependen](https://t.me/independendropers)
 🐦 Twitter/X: [twitter.com/deasaputra12](https://x.com/Deasaputra_12)
+🎮 Discord: [discord.gg/airdropindependen](https://discord.gg/Tuy2bR6CkU)
 
-🎮 Discord Server: [discord.gg/airdropindependen](https://discord.gg/Tuy2bR6CkU)
+---
 
+## ☕ Dukung Saya
 
-## Buy Me a Coffee
+* **EVM:** `0x905d0505Ec007C9aDb5CF005535bfcC5E43c0B66`
+* **TON:** `UQCFO7vVP0N8_K4JUCfqlK6tsofOF4KEhpahEEdXBMQ-MVQL`
+* **SOL:** `BmqfjRHAKXUSKATuhbjPZfcNciN3J2DA1tqMgw9aGMdj`
 
-- **EVM:** 0x905d0505Ec007C9aDb5CF005535bfcC5E43c0B66
-- **TON:** UQCFO7vVP0N8_K4JUCfqlK6tsofOF4KEhpahEEdXBMQ-MVQL
-- **SOL:** BmqfjRHAKXUSKATuhbjPZfcNciN3J2DA1tqMgw9aGMdj
+---
 
-Thank you for visiting this repository, don't forget to contribute in the form of follows and stars.
-If you have questions, find an issue, or have suggestions for improvement, feel free to contact me or open an *issue* in this GitHub repository.
+Terima kasih telah mengunjungi repositori ini.
+Jangan lupa follow dan beri ★ di GitHub.
+Jika ada pertanyaan, menemukan bug, atau saran perbaikan, silakan hubungi saya atau buka *issue* di repositori ini.
 
 **deasaputra**
 
+```
+
+---
+
+Kalau mau, saya bisa tambahkan **tangkapan layar (screenshot) aplikasi** di README ini supaya tampilannya lebih menarik di GitHub dan orang langsung tahu bentuk GUI-nya.  
+Mau saya tambahkan bagian screenshot sekalian?
+```
