@@ -1,7 +1,3 @@
-Oke, ini sudah saya rapikan dalam format **Markdown** siap tempel ke GitHub, dengan heading, emoji, dan format yang konsisten.
-
----
-
 ````markdown
 # 🆔 KTP Checker - Validator Kartu Tanda Penduduk Indonesia
 
