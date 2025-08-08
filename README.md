@@ -4,7 +4,7 @@ A Python-based desktop application for validating and checking Indonesian ID Car
 
 ## 🎯 Overview
 
-**DEA KTP Checker** is a GUI application built with Tkinter that provides detailed analysis of Indonesian ID Cards (KTP) by extracting and validating information from the 16-digit NIK (Nomor Induk Kependudukan). The application offers both individual checking and batch processing capabilities with PDF export functionality.
+**KTP Checker** is a GUI application built with Tkinter that provides detailed analysis of Indonesian ID Cards (KTP) by extracting and validating information from the 16-digit NIK (Nomor Induk Kependudukan). The application offers both individual checking and batch processing capabilities with PDF export functionality.
 
 ## ✨ Features
 
