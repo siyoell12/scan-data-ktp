@@ -228,25 +228,25 @@ Direktorat Pajak: Tidak Terdaftar
 
 ---
 
-## 🌐 Komunitas & Media Sosial
+## 🌐 Komunitas & Sosial Media
 
-💬 Telegram: [t.me/airdropindependen](https://t.me/independendropers)
+Ingin berdiskusi, bertanya, atau berbagi ide? Bergabunglah dengan komunitas kami!
+
+💬 Telegram Group: [t.me/airdropindependen](https://t.me/independendropers)
+
 🐦 Twitter/X: [twitter.com/deasaputra12](https://x.com/Deasaputra_12)
-🎮 Discord: [discord.gg/airdropindependen](https://discord.gg/Tuy2bR6CkU)
 
----
+🎮 Discord Server: [discord.gg/airdropindependen](https://discord.gg/Tuy2bR6CkU)
 
-## ☕ Dukung Saya
 
-* **EVM:** `0x905d0505Ec007C9aDb5CF005535bfcC5E43c0B66`
-* **TON:** `UQCFO7vVP0N8_K4JUCfqlK6tsofOF4KEhpahEEdXBMQ-MVQL`
-* **SOL:** `BmqfjRHAKXUSKATuhbjPZfcNciN3J2DA1tqMgw9aGMdj`
+## Buy Me a Coffee
 
----
+- **EVM:** 0x905d0505Ec007C9aDb5CF005535bfcC5E43c0B66
+- **TON:** UQCFO7vVP0N8_K4JUCfqlK6tsofOF4KEhpahEEdXBMQ-MVQL
+- **SOL:** BmqfjRHAKXUSKATuhbjPZfcNciN3J2DA1tqMgw9aGMdj
 
-Terima kasih telah mengunjungi repositori ini.
-Jangan lupa follow dan beri ★ di GitHub.
-Jika ada pertanyaan, menemukan bug, atau saran perbaikan, silakan hubungi saya atau buka *issue* di repositori ini.
+Thank you for visiting this repository, don't forget to contribute in the form of follows and stars.
+If you have questions, find an issue, or have suggestions for improvement, feel free to contact me or open an *issue* in this GitHub repository.
 
 **deasaputra**
 
