@@ -71,7 +71,7 @@ parse_nik("1234567890123456")
 * Python 3.7 atau lebih baru
 * pip
 ```
-git clone https://github.com/siyoell12/scan-data-ktp
+git clone https://github.com/siyoell12/scan-data-ktp.git
 cd scan-data-ktp
 ```
 ### Instalasi Dependensi
