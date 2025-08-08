@@ -1,21 +1,18 @@
+Oke, ini sudah saya rapikan dalam format **Markdown** siap tempel ke GitHub, dengan heading, emoji, dan format yang konsisten.
 
+---
 
 ````markdown
 # 🆔 KTP Checker - Validator Kartu Tanda Penduduk Indonesia
 
-[![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://www.python.org/)  
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
-[![GUI](https://img.shields.io/badge/GUI-Tkinter-orange.svg)](#)  
-[![PDF](https://img.shields.io/badge/Report-PDF-red.svg)](#)  
-
-Aplikasi desktop berbasis Python untuk memvalidasi dan memeriksa KTP (Kartu Tanda Penduduk) Indonesia dengan analisis data lengkap dan kemampuan pembuatan laporan PDF.
+Aplikasi desktop berbasis Python untuk memvalidasi dan memeriksa KTP (Kartu Tanda Penduduk) Indonesia dengan analisis data lengkap dan kemampuan pembuatan laporan.
 
 ---
 
 ## 🎯 Gambaran Umum
 
 **KTP Checker** adalah aplikasi GUI berbasis Tkinter yang memberikan analisis detail dari KTP dengan mengekstrak serta memvalidasi informasi dari NIK (Nomor Induk Kependudukan) 16 digit.  
-Mendukung pengecekan individu maupun batch, serta ekspor hasil ke file PDF.
+Aplikasi ini mendukung pengecekan individu maupun batch, serta dapat mengekspor hasil menjadi file PDF.
 
 ---
 
@@ -44,7 +41,7 @@ Mendukung pengecekan individu maupun batch, serta ekspor hasil ke file PDF.
 #### `parse_nik(nik)`
 - Mengambil informasi detail dari NIK  
 - Hasil: provinsi, tanggal lahir, jenis kelamin, umur  
-- Contoh:
+- Contoh:  
 ```python
 parse_nik("1234567890123456")
 ````
@@ -252,10 +249,3 @@ Jika ada pertanyaan, menemukan bug, atau saran perbaikan, silakan hubungi saya a
 
 **deasaputra**
 
-```
-
----
-
-Kalau mau, saya bisa tambahkan **tangkapan layar (screenshot) aplikasi** di README ini supaya tampilannya lebih menarik di GitHub dan orang langsung tahu bentuk GUI-nya.  
-Mau saya tambahkan bagian screenshot sekalian?
-```
