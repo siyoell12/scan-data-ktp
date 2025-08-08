@@ -70,15 +70,13 @@ parse_nik("1234567890123456")
 
 * Python 3.7 atau lebih baru
 * pip
-
-### Instalasi Dependensi
-
-```bash
-pip install tkinter requests reportlab
-```
 ```
 git clone https://github.com/siyoell12/scan-data-ktp
 cd scan-data-ktp
+```
+### Instalasi Dependensi
+```bash
+pip install tkinter requests reportlab
 ```
 ### Menjalankan Aplikasi
 
