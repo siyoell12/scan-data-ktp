@@ -1,6 +1,4 @@
-Oke, saya buatkan versi Markdown final yang **siap tempel ke GitHub** lengkap dengan badge profesional, sehingga tampilannya seperti proyek open source populer.
 
----
 
 ````markdown
 # 🆔 KTP Checker - Validator Kartu Tanda Penduduk Indonesia
